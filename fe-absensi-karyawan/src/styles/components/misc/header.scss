@@ -1,0 +1,55 @@
+@import "../../mixins";
+@import "../../variable";
+
+.header {
+  display: flex;
+  height: 50px;
+  padding: 4px 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $c-primary-color;
+  color: $c-white;
+
+  &.only-right {
+    justify-content: flex-end;
+    background-color: $c-white;
+    color: $c-black;
+  }
+
+  &.without-menu {
+    background-color: $c-white;
+    color: $c-black;
+  }
+
+  &-left {
+    font-family: $f-arial;
+    span {
+      display: inline-block;
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &.icon-menu {
+        cursor: pointer;
+      }
+
+      &:last-child {
+        @include mq-small {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-right {
+    .user {
+      font-family: $f-arial;
+    }
+    div {
+      display: inline-block;
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}

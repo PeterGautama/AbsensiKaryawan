@@ -1,0 +1,49 @@
+{
+  "name": "apinew",
+  "version": "1.0.0",
+  "description": "HRIS",
+  "main": "index.js",
+  "scripts": {
+    "prod": "pm2 stop hris && pm2 start index.js --name hris",
+    "dev": "nodemon index.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "migrate:reset": "npx sequelize-cli db:migrate:undo:all && npm run migrate",
+    "test": "jest --testTimeout=10000",
+    "pretest": "npm run migrate:reset"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-request": "^1.2.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "err": "^2.1.12",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.0",
+    "helmet": "^4.2.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "mssql": "^5.1.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.4.18",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "sequelize": "^6.3.5",
+    "sequelize-msnodesqlv8": "^0.2.6-beta.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "jest": "^24.9.0",
+    "supertest": "^6.0.1",
+    "sequelize-cli": "^6.2.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}

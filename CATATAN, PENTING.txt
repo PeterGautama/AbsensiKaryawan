@@ -1,0 +1,5 @@
+folder be-absensi-karyawan berisi semua file backend (Node JS)
+
+folder fe-absensi-karyawan berisi semua file frontend (ReactJS dengan framework Gatsby)
+
+struktur database dan data yg wajib diisi bisa dicek query di file database.db

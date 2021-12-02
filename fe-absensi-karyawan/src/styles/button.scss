@@ -1,0 +1,44 @@
+@import "./variable";
+
+.button {
+  height: 32px;
+  width: 100px;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  background-color: green;
+  font-family: $f-arial;
+  color: $c-white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #00cc00;
+}
+
+.buttonDisabled {
+  height: 32px;
+  width: 100px;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $c-silver;
+  background-color: $c-silver;
+  font-family: $f-arial;
+  color: $c-white;
+}
+
+.buttonDisabled:hover {
+  cursor: not-allowed;
+}
+
+

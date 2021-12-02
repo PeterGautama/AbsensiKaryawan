@@ -1,0 +1,83 @@
+@import "../../variable";
+
+.tableContainer {
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.MuiTypography-h6,
+input,
+.MuiButtonBase-root,
+.MuiInputBase-input,
+.MuiTypography-caption,
+.MuiTableCell-root {
+  font-family: $f-arial !important;
+}
+
+.MuiTableCell-head {
+  text-align: left !important;
+}
+
+.material_ui_timepicker {
+  margin: 0 !important;
+}
+
+.MuiTableRow-head .MuiTableCell-head:first-child,
+.MuiTableBody-root .MuiTableCell-body:first-child {
+  position: sticky;
+  left: 0;
+  //z-index: 1000;
+}
+
+.MuiTableRow-head .MuiTableCell-head {
+  background-color: $c-ivory;
+  color: $c-black;
+  z-index: 0;
+}
+
+.MuiTableSortLabel-active,
+.MuiTableSortLabel-root:hover,
+.MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active
+  .MuiTableSortLabel-icon {
+  color: $c-white !important;
+}
+
+.MuiTableBody-root .MuiTableCell-body:first-child {
+  background-color: $c-white;
+}
+
+.select-search {
+  min-width: 480px;
+}
+
+.input-file {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  &-button {
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+    border: 1px solid $c-primary-color;
+    background-color: $c-primary-color;
+    font-family: $f-arial;
+    color: $c-white;
+    border-radius: 4px;
+    height: 32px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  input[type="file"] {
+    display: none;
+  }
+}
+
+.react-datetime-picker__calendar,
+.react-datetime-picker__clock {
+  // z-index: 10000 !important;
+}

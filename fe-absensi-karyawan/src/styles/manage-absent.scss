@@ -1,0 +1,36 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: bisque;
+}
+
+.boxContainer {
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
+    background-color: white;
+}
+
+hr {
+   border: 0;
+   border-top: 10px solid black; 
+   border-radius: 5px;
+}
+
+.boxContentLeft {
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.boxContentCenter {
+    font-size: 24px;
+    display: inline-block;
+}
+
+.sameLine {
+    display: inline;
+}

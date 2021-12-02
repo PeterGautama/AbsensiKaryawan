@@ -1,0 +1,29 @@
+@import "../../variable";
+
+.loading {
+  .modal-content {
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $c-black;
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: white;
+
+    span {
+      margin-bottom: 8px;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    div {
+      font-size: 20px;
+      font-family: $f-arial;
+      font-weight: 700;
+    }
+  }
+}
